@@ -1,0 +1,19 @@
+.product-container{
+    display: flex;
+}
+.shop-container{
+    width: 70%;
+    margin: 0px 10px 0px 20px;
+    border-right: 1px solid lightgrey;
+}
+.cart-container{
+    width: 30%;
+}
+.main-button{
+    height: 30px;
+    width: 150px;
+    background-color: goldenrod;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    padding: 5px;
+}
