@@ -5,6 +5,7 @@ import './Product.css'
 
 const Product = (props) => {
     const{name, img, seller, price, stock} = props.product
+
     return (
         <div className='product'>
             <div>
