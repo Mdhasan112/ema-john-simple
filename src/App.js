@@ -11,6 +11,7 @@ import {
 import Review from './components/Review/Review';
 import Inventory from './components/Inventory/Inventory';
 import NotFound from './components/NotFound/NotFound';
+import ProductDetails from './components/ProductDetails/ProductDetails';
 
 
 function App() {
@@ -19,24 +20,27 @@ function App() {
       <Header></Header>
       <Router>
         <Switch>
-          <Route path= "/shop">
+          <Route path="/shop">
             <Shop></Shop>
           </Route>
-          <Route path= "/review">
+          <Route path="/review">
             <Review></Review>
           </Route>
-          <Route path= "/inventory">
+          <Route path="/inventory">
             <Inventory></Inventory>
           </Route>
-          <Route exact path= "/">
+          <Route exact path="/">
             <Shop></Shop>
           </Route>
-          <Route path= "*">
+          <Route path="/product/:productkey">
+            <ProductDetails></ProductDetails>
+          </Route>
+          <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>
-      
+
     </div>
   );
 }

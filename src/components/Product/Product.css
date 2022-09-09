@@ -8,3 +8,9 @@
     color: blue;
     font-weight: 450;
 }
+.product-name a{
+    text-decoration: none;
+}
+.product-img{
+    margin-right: 20px;
+}

@@ -3,15 +3,19 @@
 }
 .shop-container{
     width: 70%;
-    margin: 0px 10px 0px 20px;
+    padding: 20px 0px 0px 10px;
     border-right: 1px solid lightgrey;
+    background-color: #b3c9d0;
 }
 .cart-container{
     width: 30%;
+    padding: 20px;
+    background-color: lightsteelblue;
 }
 .main-button{
-    height: 30px;
+    height: 40px;
     width: 150px;
+    font-weight: 500;
     background-color: goldenrod;
     border: 1px solid darkgrey;
     border-radius: 5px;
