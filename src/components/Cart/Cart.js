@@ -7,7 +7,8 @@ const Cart = (props) => {
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
-        total = product.price  
+        total = total + product.price + product.quantity;
+        debugger;  
     }
     let shipping = 0;
     if(total > 35) {
@@ -22,11 +23,15 @@ const Cart = (props) => {
 
     const tax = Math.round(total / 10).toFixed(2);
     const grandTotal = (total + shipping + Number(tax)).toFixed(2)
+    const foramtNumber= num => {
+        const precision = num.toFixed(2);
+        return Number(precision)
+    }
     return (
         <div>
             <h2 className='text-success'>Order Samary</h2>
             <p>Item Ordered: {cart.length}</p>
-            <p>Product Price: {total}</p>
+            <p>Product Price: {foramtNumber(total)}</p>
             <p><small>Shipping Cost: {shipping}</small></p>
             <p><small>Tax + Vat: {tax}</small></p>
             <p>Total Price: {grandTotal}</p>
