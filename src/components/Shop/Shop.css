@@ -5,12 +5,12 @@
     width: 70%;
     padding: 20px 0px 0px 10px;
     border-right: 1px solid lightgrey;
-    background-color: #b3c9d0;
+    background-color: lightsteelblue;
 }
 .cart-container{
     width: 30%;
     padding: 20px;
-    background-color: lightsteelblue;
+    background-color: gainsboro;
 }
 .main-button{
     height: 40px;

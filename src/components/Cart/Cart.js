@@ -25,13 +25,15 @@ const Cart = (props) => {
     return (
         <div>
             <h2 className='text-success'>Order Samary</h2>
-            <p>Iteam Ordered: {cart.length}</p>
+            <p>Item Ordered: {cart.length}</p>
             <p>Product Price: {total}</p>
             <p><small>Shipping Cost: {shipping}</small></p>
             <p><small>Tax + Vat: {tax}</small></p>
             <p>Total Price: {grandTotal}</p>
             <br />
-            <Link to ="/review"><button className='main-button'>Order Review</button></Link>
+            <Link to ="/review">
+                <button className='main-button'>Order Review</button>
+            </Link>
         </div>
     );
 };
