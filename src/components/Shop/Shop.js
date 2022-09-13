@@ -4,6 +4,7 @@ import fakeData from '../../fakeData';
 import { addToDatabaseCart, getDatabaseCart } from '../../utilities/databaseManager';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import { Link } from 'react-router-dom';
 import './Shop.css'
 
 const Shop = () => {
@@ -21,7 +22,7 @@ const Shop = () => {
             return product;
         })
         setCart(previousCart)
-    }, [])
+    }, []);
 
     const handleAddProduct = (product) => {
         const toBeaddedkey = product.key;
@@ -50,7 +51,11 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart ={cart}></Cart>
+                <Cart cart ={cart}>
+                <Link to ="/review">
+                <button className='main-button'>Order Review</button>
+            </Link>
+                </Cart>
             </div>
             
         </div>
