@@ -5,7 +5,8 @@ import fakeData from '../../fakeData';
 import { getDatabaseCart, processOrder, removeFromDatabaseCart } from '../../utilities/databaseManager';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
-import happyimg from '../../images/giphy.gif'
+import happyimg from '../../images/giphy.gif';
+import "./Review.css"
 
 const Review = () => {
    const [cart, setCart] = useState([]);
@@ -40,7 +41,7 @@ const Review = () => {
    } 
     return (
         <div className='twin-container'>
-            <div className='shop-container'>
+            <div className='shop-container review'>
             {
                 cart.map(pd => <ReviewItem removeProduct={removeProduct} product={pd}></ReviewItem>)
             }
